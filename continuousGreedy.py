@@ -87,7 +87,6 @@ def continuous_greedy_rounding(G, y, candidateEdges, k, shortestDistances, csIni
     
     return maxCs, maxCsDisparity, maxEdgeSet
 
-sudo apt-get install python3-pip
 def testCG():
     adjacencyLists = {}
     adjacencyLists['1'] = ['2']
