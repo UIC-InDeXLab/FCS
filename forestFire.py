@@ -2,7 +2,6 @@ import random
 import numpy as np
 import networkx as nx
 from collections import deque
-import matplotlib.pyplot as plt
 import shortestDistances as sd
 
 def start_a_fire(graph, number_of_nodes, seed=42):
@@ -152,9 +151,7 @@ class MultipleSourceContinuingFF:
 
 def test():
     G = nx.random_regular_graph(6, 20)
-    plt.figure(1)
     nx.draw(G, with_labels=True)
-    plt.show()
 
     sources = [random.sample(list(G.nodes()), 1 ), None]
     print(sources)
@@ -167,7 +164,5 @@ def test():
     while not finished:
         subgraph, finished, _ = mscff.alternatingForestFire()
         nx.draw(subgraph, with_labels=True)
-        plt.show()
-
 
 # test()
