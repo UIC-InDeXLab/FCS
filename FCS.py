@@ -19,7 +19,6 @@ import threading
 from multiprocessing import Process, Pool
 from math import floor
 import cProfile
-import matplotlib.pyplot as plt
 import os.path
 import networkx as nx
 import bf
