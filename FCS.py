@@ -1395,9 +1395,9 @@ def main():
     #     pool.apply_async(VaryingKExperiment, args=(k,0.5,'community'))
     #     pool.apply_async(VaryingKExperiment, args=(k,0.5,'community', True))
     #     pool.apply_async(VaryingKExperiment, args=(k,0.5,'fof', True))
-    for sources in [3,6,9,12]:
+    # for sources in [3,6,9,12]:
         # pool.apply_async(VaryingSourcesExperient, args=(sources,0.5,'community'))
-        pool.apply_async(VaryingSourcesExperient, args=(sources,0.5,'fof'))
+    #    pool.apply_async(VaryingSourcesExperient, args=(sources,0.5,'fof'))
         # pool.apply_async(VaryingSourcesExperient, args=(sources,0.5,'community', True))
     # for p in [0.3, 0.5, 0.7,0.9]:
     #     pool.apply_async(VaryingPExperient, args=(p, 'community'))
@@ -1410,7 +1410,10 @@ def main():
     # MediumGraphsExperiment('ForestFire', 0, 0, 'fof', .5)
     # MediumGraphsExperiment('`IterFCS`', 0, 0, 'fof', .5)
     # for algorithm in ['ForestFire']:
-    # for algorithm in ['ForestFire', 'CG', 'IterFCS']:
+    for algorithm in ['ForestFire', 'CG', 'IterFCS', 'SPGREEDY', 'ACR', 'IRFA']:
+        for size in range(4):
+            for trial in range(5):
+                MediumGraphsExperiment(algorithm, size, tiral, 'fof', p=0.5)
     #MediumGraphsExperiment('SPGREEDY', 5, 0, 'fof', p=0.5)
     #MediumGraphsExperiment('ACR', 5, 0, 'fof', p=0.5)
     #MediumGraphsExperiment('CG', 5, 0, 'fof', p=0.5)
