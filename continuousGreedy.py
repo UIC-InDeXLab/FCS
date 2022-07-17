@@ -2,7 +2,6 @@ import buildNetworkX as bnx
 import generateLPParams as gen
 import random
 import shortestDistances as sd
-import matplotlib.pyplot as plt
 import networkx as nx
 
 def edgeMatching(candidateEdges, w, k):
@@ -88,7 +87,7 @@ def continuous_greedy_rounding(G, y, candidateEdges, k, shortestDistances, csIni
     
     return maxCs, maxCsDisparity, maxEdgeSet
 
-
+sudo apt-get install python3-pip
 def testCG():
     adjacencyLists = {}
     adjacencyLists['1'] = ['2']
