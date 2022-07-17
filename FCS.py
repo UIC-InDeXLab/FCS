@@ -1413,7 +1413,7 @@ def main():
     for algorithm in ['ForestFire', 'CG', 'IterFCS', 'SPGREEDY', 'ACR', 'IRFA']:
         for size in range(4):
             for trial in range(5):
-                MediumGraphsExperiment(algorithm, size, tiral, 'fof', p=0.5)
+                MediumGraphsExperiment(algorithm, size, trial, 'fof', p=0.5)
     #MediumGraphsExperiment('SPGREEDY', 5, 0, 'fof', p=0.5)
     #MediumGraphsExperiment('ACR', 5, 0, 'fof', p=0.5)
     #MediumGraphsExperiment('CG', 5, 0, 'fof', p=0.5)
