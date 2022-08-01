@@ -8,7 +8,7 @@ Content spread inequity is a potential unfairness issue in online social network
 We prove the problem is NP-hard and inapproximable in polynomial time unless P = NP. Therefore, allowing \new{relaxation of the fairness constraint}, we propose an algorithm based on LP-relaxation and randomized rounding with fixed approximation ratios on fairness and content spread. We provide multiple optimizations, further improving the performance of our algorithm in practice. Besides, we propose a scalable algorithm that dynamically adds subsets of nodes, chosen via iterative sampling, and solves smaller problems corresponding to these nodes. Besides theoretical analysis, we conduct comprehensive experiments on real and synthetic data sets.  Across different settings, our algorithms found solutions with near-zero unfairness while significantly increasing the content spread. Our scalable algorithm could process a graph with half a million nodes on a single machine, reducing the unfairness to around 0.0004 while lifting content spread by 43\%.
 
 ## Publications to cite:
-[1] Ian Swift, Sana Ebrahimi, Azade Nova, Abolfazl Asudeh. **Maximizing Fair Content Spread via Edge Suggestion in Social Networks.** PVLDB, 15(11)): 2692 - 2705, 2022.
+[1] Ian Swift, Sana Ebrahimi, Azade Nova, Abolfazl Asudeh. **Maximizing Fair Content Spread via Edge Suggestion in Social Networks.** PVLDB, 15(11): 2692 - 2705, 2022.
 
 ## Getting Started
 
