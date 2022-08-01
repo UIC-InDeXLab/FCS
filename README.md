@@ -8,15 +8,7 @@ Content spread inequity is a potential unfairness issue in online social network
 We prove the problem is NP-hard and inapproximable in polynomial time unless P = NP. Therefore, allowing \new{relaxation of the fairness constraint}, we propose an algorithm based on LP-relaxation and randomized rounding with fixed approximation ratios on fairness and content spread. We provide multiple optimizations, further improving the performance of our algorithm in practice. Besides, we propose a scalable algorithm that dynamically adds subsets of nodes, chosen via iterative sampling, and solves smaller problems corresponding to these nodes. Besides theoretical analysis, we conduct comprehensive experiments on real and synthetic data sets.  Across different settings, our algorithms found solutions with near-zero unfairness while significantly increasing the content spread. Our scalable algorithm could process a graph with half a million nodes on a single machine, reducing the unfairness to around 0.0004 while lifting content spread by 43\%.
 
 ## Publications to cite:
-[1] Ian Swift, Sana Ebrahimi, Azade Nova, Abolfazl Asudeh. **Maximizing Fair Content Spread via Edge Suggestion in Social Networks.** VLDB, 2022, VLDB Endowment.
-
-[2] Vineet Chaoji, Sayan Ranu, Rajeev Rastogi, and Rushi Bhatt. **Recommendations to boost content spread in social networks.** WWW, 2012, ACM (Continuous Greedy algorithm derived from this work)
-
-[3] Wenguo Yang, Jianmin Ma, Yi Li, Ruidong Yan, Jing Yuan, Weili Wu, and Deying Li. **Marginal gains to maximize content spread in social networks.** IEEE Transactions on Computational Social Systems, 2019, IEEE (IRFA Algorithm implemented from this work)
-
-[4] Liwang Zhu, Qi Bao, and Zhongzhi Zhang. **Minimizing Polarization and Disagreement in Social Networks via Link Recommendation.** NeurIPS, 2021 (SPGREEDY algorithm implemented from this work)
-
-[5] Zhi Yu, Can Wang, Jiajun Bu, Xin Wang, Yue Wu, and Chun Chen. **Friend recommendation with content spread enhancement in social networks.** Information Sciences, 2015 (ACR-FoF algorithm implemented from this work)
+[1] Ian Swift, Sana Ebrahimi, Azade Nova, Abolfazl Asudeh. **Maximizing Fair Content Spread via Edge Suggestion in Social Networks.** PVLDB, 15(11)): 2692 - 2705, 2022.
 
 ## Getting Started
 
@@ -49,9 +41,9 @@ When loading the pickle file, the results will be stored in a python dictionary.
 ## Authors
 
 * **[Ian P Swift](https://github.com/Ian-P-Swift)**
-
-* **[Sana Ebrahmi](https://github.com/sanaebrahimi)**
-
+* **[Sana Ebrahimi](https://github.com/sanaebrahimi)**
+* **[Azade Nova](https://research.google/people/106111/)**
+* **[Abolfazl Asudeh](https://www.cs.uic.edu/~asudeh/)**
 ## Additional Acknowlegements
 
 Some code was used from the following open source repositories, and accordingly, we would like to acknowledge them for openly providing their work:
